@@ -101,149 +101,22 @@
 .diagnosticCard{border:1px solid #9a7851;background:#392b1d;color:#ffeccf;border-radius:12px;padding:12px 14px;margin-top:10px;line-height:1.5}
 .diagnosticCard strong{color:#ffe4aa}.diagnosticCard p{margin:7px 0}.diagnosticCard small{color:#f0c998}
 </style>
-
-<style id="sparkflow-pixel-office-v1">
-/* SparkFlow — oficina pixel-art. Presentación únicamente: motor, IDs y eventos intactos. */
-:root{--bg:#0c1028;--panel:#141d3b;--panel2:#202b51;--edge:#5475a4;--border:#52679a;--text:#f4f5ff;--muted:#bfd0ee;--gold:#ffd46c;--cyan:#5bdcf5;--green:#76e2aa;--red:#ff91a4}
-html,body{background:linear-gradient(180deg,#25234b 0,#11162e 260px,#0b1126 100%);color:var(--text)}
-body{font-family:"Trebuchet MS",Verdana,Segoe UI,sans-serif}
-.officeScene{height:134px;position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(#48417e 0 69%,#26285c 70%);border-bottom:5px solid #161c43}
-.officeScene:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.28;background:repeating-linear-gradient(90deg,transparent 0 59px,#262354 59px 61px),repeating-linear-gradient(0deg,transparent 0 37px,#262354 37px 39px)}
-.officeFloor{position:absolute;z-index:0;bottom:0;width:100%;height:23px;background:repeating-linear-gradient(90deg,#373568 0 66px,#4a4478 66px 69px);border-top:4px solid #7470a9}
-.officeWindow{position:absolute;top:15px;z-index:0;height:94px;width:25%;background:linear-gradient(#559cdd,#86c9f3 78%,#d9cbed);border:6px solid #232957;box-shadow:inset 0 0 0 4px #8da7e1,6px 6px 0 #282750;overflow:hidden}
-.officeWindow:before{content:"";position:absolute;z-index:2;top:0;bottom:0;left:47%;width:6px;background:#2d396e}
-.officeWindow:after{content:"";position:absolute;z-index:2;top:44%;left:0;right:0;height:5px;background:#2d396e}
-.officeWindow--left{left:15%}.officeWindow--right{right:14%}
-.officeBuildings{position:absolute;bottom:0;left:0;right:0;height:60%;background:repeating-linear-gradient(90deg,#5876b8 0 13px,#819ce0 13px 19px,#4b6fab 19px 37px,transparent 37px 44px);clip-path:polygon(0 45%,6% 45%,6% 12%,17% 12%,17% 55%,25% 55%,25% 28%,37% 28%,37% 0,49% 0,49% 46%,57% 46%,57% 16%,70% 16%,70% 55%,80% 55%,80% 7%,92% 7%,92% 34%,100% 34%,100% 100%,0 100%)}
-.officeSign{position:absolute;z-index:3;top:25px;left:50%;transform:translateX(-50%);background:#1c2455;border:4px solid #9288da;outline:3px solid #22214b;padding:11px 28px 10px;min-width:290px;box-shadow:6px 6px 0 #191c47;text-align:center;white-space:nowrap}
-.officeSign strong{display:block;color:#ffda7b;font-family:Consolas,"Courier New",monospace;font-size:clamp(20px,2.4vw,34px);font-weight:1000;letter-spacing:.06em;text-shadow:3px 3px 0 #43335c}
-.officeSign span{display:block;color:#c5eafa;font:700 10px/1.5 Consolas,monospace;letter-spacing:.18em}
-.officeLamp{position:absolute;z-index:2;top:0;width:70px;height:12px;background:#ffe29a;border:4px solid #2b295c;box-shadow:0 8px 15px #ffe29a60}
-.officeLamp:before{content:"";position:absolute;bottom:9px;left:29px;height:22px;width:5px;background:#2b295c}
-.officeLamp--left{left:29%}.officeLamp--right{right:28%}
-.officeDesk{position:absolute;z-index:3;bottom:9px;width:130px;height:15px;background:#dcad80;border:4px solid #27204a;box-shadow:0 17px 0 -4px #373258}
-.officeDesk--left{left:7%}.officeDesk--right{right:7%}
-.officeDesk>.officeSprite{position:absolute;bottom:7px;left:41px;width:73px;height:73px;image-rendering:pixelated}
-.officeDesk--right>.officeSprite{transform:scaleX(-1)}
-.officeComputer{position:absolute;z-index:2;top:-28px;left:4px;width:33px;height:27px;background:#5cdcf5;border:5px solid #252d62;box-shadow:3px 3px 0 #18224e}
-.officeComputer:after{content:"";position:absolute;top:20px;left:10px;width:6px;height:9px;background:#252d62}
-.officePlant{position:absolute;z-index:2;bottom:11px;width:22px;height:20px;background:#be82a3;border:4px solid #32305a}
-.officePlant:before{content:"";position:absolute;bottom:16px;left:5px;width:6px;height:30px;background:#43896a;box-shadow:-11px -9px 0 2px #80c98b,11px -20px 0 1px #65b987,0 -28px 0 4px #8cdb8c}
-.officePlant--left{left:3%}.officePlant--right{right:3%}
-header{height:auto;min-height:76px;padding:10px 20px;background:#101936;border-bottom:4px solid #536daf;box-shadow:0 5px 0 #0b132c;position:relative;z-index:2}
-.brand,.paneltitle,.missionKicker,.missionTitle,.level strong,.boardTop strong{font-family:Consolas,"Courier New",monospace}
-.brand{font-size:22px;letter-spacing:.1em;text-shadow:2px 2px 0 #1e3154}
-.brand span{color:var(--gold)}
-.subtitle{font-size:10px;color:#9fd2ed}
-.pill{border-radius:5px;background:#24365e;border:2px solid #6988c4;box-shadow:3px 3px 0 #0a1126}
-button{border-radius:5px;border:2px solid #6384bb;background:#273963;box-shadow:3px 3px 0 #101632;transition:filter .15s,transform .15s,background .15s}
-button:hover:not(:disabled){background:#39538a;filter:brightness(1.12);transform:translateY(-1px)}
-button:active:not(:disabled){transform:translate(2px,2px);box-shadow:1px 1px 0 #101632}
-button.primary{background:linear-gradient(#63e2ee,#28a8df);color:#08152f;border:2px solid #a4f7fa}
-button.gold{background:linear-gradient(#ffe38d,#edb953);color:#302009;border:2px solid #ffeaa9}
-.app{max-width:1790px;padding-top:20px}
-#intro{border:2px solid #4382a5;border-left:6px solid #7de7c4;background:#17324f;box-shadow:4px 4px 0 #0a1126;border-radius:4px}
-.levelbar{padding-bottom:18px;gap:9px}
-.level{border-radius:4px;border-width:2px;min-width:61px;background:#1b2a4d;box-shadow:3px 3px 0 #0a1126}
-.level.current{background:#493d67;box-shadow:inset 0 0 0 1px #efc879,3px 3px 0 #0a1126}
-.level.done{background:#1b4a4e}
-.missionHero{display:grid;grid-template-columns:115px minmax(0,1fr);gap:19px;position:relative;padding:17px 20px;background:linear-gradient(130deg,#26345c,#182747 68%);border:3px solid #7797d6;border-left:6px solid #ffcf75;border-radius:7px;box-shadow:6px 6px 0 #0b1128}
-.pixelCoordinator{align-self:start;display:flex;flex-direction:column;align-items:center;gap:5px}
-.pixelCoordinatorPortrait{position:relative;display:flex;align-items:center;justify-content:center;width:106px;height:105px;background:linear-gradient(#9991dc,#5a559f);border:4px solid #d5c1ef;outline:3px solid #29305f;box-shadow:5px 5px 0 #111738;overflow:hidden}
-.pixelCoordinatorPortrait .officeSprite{width:91px;height:91px;transform:translateY(4px);image-rendering:pixelated}
-.pixelCoordinatorTag{max-width:116px;background:#202a59;color:#f6e1aa;border:2px solid #b4a4e5;padding:5px 7px;font:700 10px Consolas,monospace;letter-spacing:.03em}
-.pixelCoordinatorHint{color:#ffdf87;font:700 10px Consolas,monospace;text-align:center}
-.missionHeroBody{min-width:0;position:relative}
-.missionHeroBody:before{content:"";position:absolute;left:-29px;top:49px;width:14px;height:14px;background:#26345c;border-left:3px solid #a2abe4;border-bottom:3px solid #a2abe4;transform:rotate(45deg)}
-.missionTitle{font-size:clamp(22px,2.1vw,31px);color:#ffe0a3;letter-spacing:-.02em}
-.missionText{font-size:15px}
-.missionTask{border:2px solid #516c9e;border-radius:5px;background:#111f3f}
-.missionTask strong{color:#95e6ff}
-.layout{gap:13px}
-.panel{border:3px solid #566f9d;border-radius:7px;background:#182344;box-shadow:5px 5px 0 #0a1028}
-.paneltitle{font-size:12px;color:#a9dcff;letter-spacing:.09em}
-.sectionline{background:#435782}
-.tag{border-radius:3px;border:2px solid #4ea9c0;background:#16516d}
-.json,.log{background:#0b1731;border:2px solid #445f8d;border-radius:4px}
-.caseButton{border-radius:4px}
-.viewport{background:radial-gradient(ellipse at 50% 35%,#192f58,#101e41 70%);border-top:3px solid #465d9c;border-bottom:3px solid #465d9c}
-.viewport:before{background-image:linear-gradient(#75b6e61c 1px,transparent 1px),linear-gradient(90deg,#75b6e61c 1px,transparent 1px);background-size:24px 24px}
-.boardTop{background:#233659;border-bottom:3px solid #4c7caa}
-.boardCaseStatus,.routeSelectionHelp{background:#1a3359}
-.routeSelection button{border-radius:5px}
-#board .node rect{stroke-width:3;rx:5;filter:drop-shadow(3px 4px 0 #091633)}
-#board .node.source rect{fill:#6b4c27;stroke:#ffd179}
-#board .node.router rect{fill:#165c8b;stroke:#5be2fd}
-#board .node.goal rect{fill:#145a49;stroke:#71e9ae}
-#board .edge-line{stroke-width:5}
-.boardFoot{background:#152441}
-.speedControls{border-radius:4px}
-.note{border-radius:3px}
-.profileCard,.tut-card{border-radius:6px;border-width:3px;box-shadow:7px 7px 0 #090e23}
-.siteFooter{border-top:2px solid #4a5c8d}
-@media(max-width:1250px){.officeDesk--left{left:3%}.officeDesk--right{right:3%}.officeWindow--left{left:12%}.officeWindow--right{right:12%}.officeSign{min-width:240px;padding:12px 18px}}
-@media(max-width:800px){.officeScene{height:106px}.officeSign{top:20px;min-width:195px;padding:9px 12px}.officeSign strong{font-size:20px}.officeSign span{font-size:8px}.officeDesk{width:72px}.officeDesk>.officeSprite{width:53px;height:53px;left:15px}.officeComputer{width:23px;height:20px}.officeLamp,.officePlant{display:none}.officeWindow{top:12px;height:78px;width:36%}.officeWindow--left{left:2%}.officeWindow--right{right:2%}header{padding:12px}.missionHero{display:grid!important;grid-template-columns:67px minmax(0,1fr);gap:11px;padding:12px 10px}.pixelCoordinatorPortrait{width:63px;height:65px;border-width:3px}.pixelCoordinatorPortrait .officeSprite{width:59px;height:59px}.pixelCoordinatorTag{font-size:8px;padding:4px 2px}.pixelCoordinatorHint{display:none}.missionHeroBody:before{display:none}.missionTitle{font-size:20px}.missionTask{padding:10px}.panel{box-shadow:3px 3px 0 #080e23}.level{min-width:53px}}
-@media(max-width:480px){.officeDesk,.officeWindow{opacity:.72}.officeSign{min-width:185px}.missionHero{grid-template-columns:1fr!important}.pixelCoordinator{flex-direction:row;align-items:center;justify-content:flex-start;gap:9px}.pixelCoordinatorPortrait{width:44px;height:44px}.pixelCoordinatorPortrait .officeSprite{height:42px;width:42px}.pixelCoordinatorTag{font-size:9px}.missionHeroBody{width:100%}}
-@media print{.officeScene,.pixelCoordinator{display:none!important}.missionHero{display:block!important;box-shadow:none}}
-@media(prefers-reduced-motion:reduce){button{transition:none}}
-</style>
-
-
-<style id="sparkflow-pixel-assets-v2">
-/* Personajes con rostros legibles y oficina en una capa bajo el SVG de rutas. */
-canvas.officeSprite{display:block;image-rendering:pixelated;object-fit:contain;object-position:center;pointer-events:none}
-.officeDesk>canvas.officeSprite{position:absolute;bottom:7px;left:43px;width:66px;height:82px;transform:none}
-.officeDesk--right>canvas.officeSprite{transform:scaleX(-1)}
-.pixelCoordinatorPortrait{background:linear-gradient(140deg,#66528f,#312b60)}
-.pixelCoordinatorPortrait canvas.officeSprite{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;transform:translateY(5px) scale(1.08);filter:drop-shadow(2px 2px 0 #1b1b46)}
-.viewport{isolation:isolate;background:#111a37}
-.viewport .pixelOfficeBackdrop{position:absolute;z-index:0;inset:0;display:block;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;opacity:.44;pointer-events:none;user-select:none}
-.viewport:before{z-index:1;opacity:.5}
-#board{z-index:2;position:relative}
-#board .node rect{paint-order:stroke;filter:drop-shadow(0 3px 2px #071128)}
-@media(max-width:800px){
- .officeDesk>canvas.officeSprite{width:49px;height:61px;left:16px;bottom:7px}
- .pixelCoordinatorPortrait canvas.officeSprite{width:100%;height:100%;transform:translateY(3px) scale(1.12)}
- .viewport .pixelOfficeBackdrop{height:460px;min-height:460px;object-fit:cover;object-position:left center}
-}
-@media(prefers-reduced-motion:reduce){.pixelOfficeBackdrop{animation:none!important}}
-@media print{.pixelOfficeBackdrop{display:none!important}}
-</style>
 </head>
 <body>
 
 <header><div><div class="brand">SPARK<span>FLOW</span> <span style="font-size:14px">⚡</span></div><div class="subtitle">Un juego de lógica, energía y rutas</div></div><div class="topright"><span class="profileNames" id="playerBadge"></span><button class="small ghost" id="editProfileBtn">✎ Participantes</button><div class="pill" id="progressText">0/13 misiones</div><div class="pill" id="starsText">0 ★</div><button class="small" id="tutorialBtn">📘 Tutorial de operadores</button><button class="small ghost" id="reportBtn">🔐 Descargar reporte cifrado</button><button class="small ghost" id="printReportBtn">🖨 Vista previa / imprimir</button><button class="small ghost" id="resetAllBtn">Reiniciar progreso</button></div></header>
-<!-- Decoración pixel-art: oficina de operaciones, sin controles ni lógica adicionales -->
-<div class="officeScene" aria-hidden="true">
-  <div class="officeWindow officeWindow--left"><div class="officeBuildings"></div></div>
-  <div class="officeWindow officeWindow--right"><div class="officeBuildings"></div></div>
-  <div class="officeLamp officeLamp--left"></div><div class="officeLamp officeLamp--right"></div>
-  <div class="officeDesk officeDesk--left"><span class="officeComputer"></span><canvas class="officeSprite" width="56" height="82" data-pixel-asset="operador" aria-hidden="true"></canvas></div>
-  <div class="officeDesk officeDesk--right"><span class="officeComputer"></span><canvas class="officeSprite" width="56" height="82" data-pixel-asset="operador" aria-hidden="true"></canvas></div>
-  <div class="officePlant officePlant--left"><span></span></div><div class="officePlant officePlant--right"><span></span></div>
-  <div class="officeSign"><strong>⚡ SPARKFLOW</strong><span>OFICINA DE OPERACIONES</span></div>
-  <div class="officeFloor"></div>
-</div>
-
 <main class="app"><div id="intro"><strong>Tu misión:</strong> restaurar una central energética. Configura filtros sobre las rutas que salen de cada router; todas las rutas ya están conectadas y tú decides cuándo pasa cada chispa. Cuando varias condiciones son verdaderas, la chispa puede recorrer <strong>varias rutas a la vez</strong>. No necesitas programar.</div><nav class="levelbar" id="levels" aria-label="Selección de etapas"></nav>
 <section class="missionHero" aria-label="Objetivo de la misión">
-  <div class="pixelCoordinator" aria-label="Coordinador de misiones">
-    <div class="pixelCoordinatorPortrait"><canvas class="officeSprite" width="72" height="82" data-pixel-asset="coordinadora" aria-hidden="true"></canvas></div>
-    <div class="pixelCoordinatorTag">COORDINADOR</div>
-    <div class="pixelCoordinatorHint">¡Nueva misión!</div>
-  </div>
-  <div class="missionHeroBody">
   <div class="missionHeading"><span class="tag" id="difficulty">Nivel inicial</span><span class="missionKicker">OBJETIVO PRINCIPAL</span></div>
   <h1 class="missionTitle" id="stageTitle"></h1>
   <p class="missionText" id="stageGoal"></p><div class="missionTask"><div><strong>🎯 Qué debes hacer</strong><p id="missionInstructions"></p></div><div><strong>🧪 Resultado esperado en cada JSON</strong><ul id="missionExpected"></ul></div></div>
-  </div>
 </section>
 <nav class="mobileTabs" aria-label="Secciones del juego">
 <button class="mobileTab" id="mobileCircuito" type="button" data-target="circuito" aria-selected="true">⚡ Circuito</button>
 <button class="mobileTab" id="mobileFiltros" type="button" data-target="filtros" aria-selected="false">✏️ Filtros</button>
 <button class="mobileTab" id="mobileDatos" type="button" data-target="datos" aria-selected="false">{ } JSON</button>
 </nav><div class="layout"><aside class="panel"><div class="pad"><div class="paneltitle">Datos de entrada</div><p class="smalltxt muted">Selecciona el JSON para inspeccionar sus datos. Cada uno debe producir su propio recorrido.</p><div id="jsonBuilder" class="hide"><label class="paneltitle" for="jsonInput">✍ Construye tu JSON</label><p class="help">Escribe un objeto JSON completo, con comillas dobles para las claves y los textos. Los números y los booleanos no llevan comillas.</p><textarea id="jsonInput" class="input" rows="12" spellcheck="false" autocapitalize="off" autocomplete="off" style="width:100%;font-family:ui-monospace,Consolas,monospace;line-height:1.5;resize:vertical" placeholder="Escribe aquí tu JSON desde cero"></textarea><p id="jsonError" class="help" role="alert"></p><div class="sectionline"></div></div><div class="casePicker" id="casePicker" aria-label="Casos de prueba"></div><pre class="json" id="sampleJson"></pre><div class="sectionline"></div><div class="paneltitle">Aprendizaje</div><p class="smalltxt" id="lesson"></p><div class="sectionline"></div><div class="paneltitle">Tutorial de lógica</div><div id="tutorialContext" class="help">Las explicaciones de AND y OR aparecerán cuando llegues a esas etapas.</div><button id="tutorialContextBtn" class="small hide" type="button">📘 Practicar el operador</button><div class="sectionline"></div><div class="paneltitle">Pista</div><p class="help" id="hintText">Puedes solicitar una pista si la necesitas.</p><button id="hintBtn" class="small">💡 Mostrar pista</button><div class="sectionline"></div><div class="note">En Make, cada salida de un router tiene su propio filtro. Las puertas que esperan varios generadores en este juego son una <strong>mecánica de simulación</strong>, no una unión automática de rutas de Make.</div></div></aside>
-<section class="panel"><div class="boardTop"><div><strong id="boardTitle">Tablero de circuito</strong><p id="boardHelp">Selecciona una línea para configurar su filtro.</p></div><span class="tag" id="buildMode">CONFIGURACIÓN</span></div><div class="routeSelectionHelp">👆 <strong>Paso 1: elige una ruta</strong> en los botones de abajo (o haz clic en su línea dentro del circuito). <strong>Paso 2:</strong> edita sus condiciones en el panel derecho. <strong>Paso 3:</strong> ejecuta y compara los JSON.</div><div class="routeSelection" id="routeSelection" aria-label="Elegir ruta para editar"></div><div class="boardCaseStatus" id="boardCaseStatus" aria-live="polite">Selecciona un JSON y ejecuta la simulación.</div><div class="speedControls"><label for="speedSelect">⏱ Velocidad</label><select id="speedSelect" class="input" aria-label="Velocidad de simulación"><option value="slow">Lenta · aprender</option><option value="normal" selected>Normal · pausada</option><option value="fast">Rápida · repasar</option></select><label class="skipToggle"><input id="skipAnimation" type="checkbox"> Omitir animaciones y mostrar resultados</label><small>Se evalúan todos los JSON, incluso si omites las animaciones.</small></div><div class="mobileSwipeHelp">↔ Desliza el circuito o usa las flechas para ver los receptores. Durante la simulación la vista sigue la chispa.</div><div class="mobileBoardControls"><button class="small ghost" id="boardLeftBtn" type="button" aria-label="Ver parte izquierda del circuito">← Inicio</button><button class="small ghost" id="boardRightBtn" type="button" aria-label="Ver parte derecha del circuito">Final →</button></div><div class="viewport" id="boardScroller" aria-label="Circuito desplazable horizontalmente"><canvas class="pixelOfficeBackdrop" width="144" height="81" data-pixel-asset="oficina" aria-hidden="true"></canvas><svg id="board" viewBox="0 0 780 460" role="img" aria-label="Tablero interactivo de rutas de energía"><g id="edgesLayer"></g><g id="nodesLayer"></g><circle class="spark" id="spark" cx="0" cy="0" r="0"></circle></svg></div><div class="boardFoot"><span>— Las rutas están conectadas. Selecciona cada una para definir sus condiciones. —</span><button class="small ghost" id="resetLevelBtn">↺ Reiniciar etapa</button></div><div class="pad"><div class="buttons"><button class="primary" id="runBtn">▶ Ejecutar simulación</button><button id="nextBtn" class="gold hide">Siguiente etapa →</button></div><div id="levelFeedback" aria-live="polite"></div><div id="diagnosticFeedback" aria-live="polite"></div><div id="results"></div><div class="routeComparisons" id="routeComparisons" aria-live="polite"></div></div></section>
+<section class="panel"><div class="boardTop"><div><strong id="boardTitle">Tablero de circuito</strong><p id="boardHelp">Selecciona una línea para configurar su filtro.</p></div><span class="tag" id="buildMode">CONFIGURACIÓN</span></div><div class="routeSelectionHelp">👆 <strong>Paso 1: elige una ruta</strong> en los botones de abajo (o haz clic en su línea dentro del circuito). <strong>Paso 2:</strong> edita sus condiciones en el panel derecho. <strong>Paso 3:</strong> ejecuta y compara los JSON.</div><div class="routeSelection" id="routeSelection" aria-label="Elegir ruta para editar"></div><div class="boardCaseStatus" id="boardCaseStatus" aria-live="polite">Selecciona un JSON y ejecuta la simulación.</div><div class="speedControls"><label for="speedSelect">⏱ Velocidad</label><select id="speedSelect" class="input" aria-label="Velocidad de simulación"><option value="slow">Lenta · aprender</option><option value="normal" selected>Normal · pausada</option><option value="fast">Rápida · repasar</option></select><label class="skipToggle"><input id="skipAnimation" type="checkbox"> Omitir animaciones y mostrar resultados</label><small>Se evalúan todos los JSON, incluso si omites las animaciones.</small></div><div class="mobileSwipeHelp">↔ Desliza el circuito o usa las flechas para ver los receptores. Durante la simulación la vista sigue la chispa.</div><div class="mobileBoardControls"><button class="small ghost" id="boardLeftBtn" type="button" aria-label="Ver parte izquierda del circuito">← Inicio</button><button class="small ghost" id="boardRightBtn" type="button" aria-label="Ver parte derecha del circuito">Final →</button></div><div class="viewport" id="boardScroller" aria-label="Circuito desplazable horizontalmente"><svg id="board" viewBox="0 0 780 460" role="img" aria-label="Tablero interactivo de rutas de energía"><g id="edgesLayer"></g><g id="nodesLayer"></g><circle class="spark" id="spark" cx="0" cy="0" r="0"></circle></svg></div><div class="boardFoot"><span>— Las rutas están conectadas. Selecciona cada una para definir sus condiciones. —</span><button class="small ghost" id="resetLevelBtn">↺ Reiniciar etapa</button></div><div class="pad"><div class="buttons"><button class="primary" id="runBtn">▶ Ejecutar simulación</button><button id="nextBtn" class="gold hide">Siguiente etapa →</button></div><div id="levelFeedback" aria-live="polite"></div><div id="diagnosticFeedback" aria-live="polite"></div><div id="results"></div><div class="routeComparisons" id="routeComparisons" aria-live="polite"></div></div></section>
 <aside class="panel"><div class="pad"><div class="paneltitle">Editor de rutas y filtros</div><p class="smalltxt muted" id="editorIntro">Selecciona una ruta en los botones visibles sobre el circuito; aquí se editará su filtro.</p><div id="editor" class="hide"><div class="sectionline"></div><strong id="edgeTitle"></strong><p class="smalltxt muted" id="edgeDescription"></p><div id="connectionBox" class="switch-row hide"><label class="toggle"><input type="checkbox" id="connectedToggle"> Ruta conectada</label></div><div id="rules"></div><div class="buttons" style="margin-top:10px"><button class="small" id="addRuleBtn">+ Añadir condición</button><button class="small ghost" id="removeRuleBtn">− Quitar condición</button></div></div><div class="sectionline"></div><div class="paneltitle">Consola de ejecución</div><div id="executionLog" class="log" aria-live="polite"><div>Preparado para ejecutar el circuito.</div></div><div class="sectionline"></div><div class="paneltitle">Cómo se juega</div><p class="help">1. Lee la misión y lo esperado para cada JSON.<br>2. Haz clic en el botón de la ruta que quieres editar (encima del circuito).<br>3. Elige dato y operador. <strong>Escribe tú el valor exacto</strong> (se distinguen mayúsculas y minúsculas).<br>4. Si necesitas, combina condiciones con Y u O.<br>5. Ejecuta, revisa cada JSON y corrige hasta superar el circuito.</p></div></aside></div><p class="foot">SparkFlow · Juego independiente de lógica y circuitos · Funciona localmente, sin internet ni cuentas externas · El progreso se guarda en este navegador cuando está disponible.</p></main>
 <footer class="siteFooter">⚡ SparkFlow también se puede jugar sin conexión: <a href="index.html" download="index.html" title="Descargar el archivo index.html para jugar sin conexión">descarga el archivo index.html</a> y ábrelo desde tu PC con un navegador. No necesitas instalar nada.</footer><div id="toast" role="status"></div>
 <div class="profileOverlay" id="profileOverlay" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
@@ -523,5 +396,4 @@ setMobileTab('circuito',false);
 
 load(0);updatePlayerBadge();if(!progress.profile)openProfile();else $('profileOverlay').classList.add('hide');
 </script>
-<script defer src="assets/sparkflow-art.js"></script>
 </body></html>
