@@ -21,7 +21,7 @@ FIN = "<!-- sparkflow-assets:fin -->"
 
 # nombre de la variable CSS -> archivo
 IMAGENES = {
-    "--img-oficina": "assets/oficina/fondos/oficina-dia.webp",
+    "--img-oficina": "assets/oficina/fondos/oficina-panoramica.webp",
     "--img-coordinadora": "assets/oficina/personajes/coordinadora-retrato.png",
     "--img-operador": "assets/oficina/personajes/operador-retrato.png",
     "--img-coordinadora-caminar": "assets/oficina/personajes/animacion/coordinadora-caminar.png",
