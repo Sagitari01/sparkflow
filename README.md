@@ -26,11 +26,11 @@ Se practican las comparaciones `>`, `<`, `>=`, `<=`, `==` y `!=`, las condicione
 
 | N.º | Misión | Nivel | Qué se practica |
 |---|---|---|---|
-| 1 | Primer día en la oficina | Inicial | Comparación numérica: mayor o igual que |
+| 1 | Primer día en la oficina | Inicial | Comparar un número con un valor límite |
 | 2 | Dos áreas, dos bandejas | Inicial | Comparar textos y rutas excluyentes |
 | 3 | Una solicitud, dos destinos | Inicial | Un router puede ejecutar dos salidas a la vez |
 | 4 | La mesa de prioridades | Inicial | Límites y rangos sin solapamientos |
-| 5 | La doble firma | Intermedio | AND: dos condiciones verdaderas a la vez |
+| 5 | La doble firma | Intermedio | Combinar dos condiciones en un mismo filtro |
 | 6 | Original y copia | Intermedio | Filtros de rutas independientes |
 | 7 | Cuatro bandejas de atención | Avanzado | AND y OR en cuatro rutas paralelas |
 | 8 | Cuatro revisiones independientes | Avanzado | Combinar AND y OR y distinguir umbrales |
