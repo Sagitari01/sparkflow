@@ -1,0 +1,86 @@
+{
+  "coordinadora-caminar.png": {
+    "dimensiones": [
+      272,
+      108
+    ],
+    "alfa": [
+      0,
+      255
+    ],
+    "bases": [
+      107,
+      107,
+      107,
+      107
+    ],
+    "pixeles_distintos_piernas_entre_cuadros": [
+      800,
+      737,
+      755,
+      826
+    ],
+    "cambios_silueta_piernas": [
+      547,
+      489,
+      513,
+      561
+    ]
+  },
+  "coordinadora-celebrar.png": {
+    "dimensiones": [
+      136,
+      108
+    ],
+    "alfa": [
+      0,
+      255
+    ],
+    "bases": [
+      107,
+      101
+    ]
+  },
+  "operador-caminar.png": {
+    "dimensiones": [
+      272,
+      108
+    ],
+    "alfa": [
+      0,
+      255
+    ],
+    "bases": [
+      107,
+      107,
+      107,
+      107
+    ],
+    "pixeles_distintos_piernas_entre_cuadros": [
+      711,
+      668,
+      660,
+      681
+    ],
+    "cambios_silueta_piernas": [
+      535,
+      514,
+      520,
+      531
+    ]
+  },
+  "operador-celebrar.png": {
+    "dimensiones": [
+      136,
+      108
+    ],
+    "alfa": [
+      0,
+      255
+    ],
+    "bases": [
+      107,
+      101
+    ]
+  }
+}
