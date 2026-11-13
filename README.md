@@ -44,6 +44,18 @@ En las misiones **1 a 10** se configuran los filtros de cada ruta. En las mision
 
 En las misiones 9 y 10 varios revisores deben dar su visto bueno para que la «Firma final» deje pasar la solicitud a Gerencia. Esa firma es una **mecánica pedagógica del juego**: no representa una unión automática de rutas en Make u otras herramientas.
 
+### Estrellas y pistas
+
+Cada misión entrega hasta 3 estrellas. Hay tres pistas por misión y cada una reduce el máximo que se puede ganar:
+
+| Pista | Qué entrega | Estrellas máximas |
+|---|---|---|
+| 1 | Una orientación general | 2 |
+| 2 | El campo y el tipo de comparación de cada ruta, sin el valor | 1 |
+| 3 | Deja cargada una respuesta válida; solo falta ejecutar la simulación | 0 |
+
+Una misión resuelta con la pista 3 desbloquea la siguiente, aparece como **«Con ayuda»** y en el informe figura como «Resuelta con ayuda (pista 3)». Con **Reiniciar etapa** se borran los filtros y las pistas usadas; si la misión se resuelve de nuevo sin pistas, se ganan las estrellas.
+
 ## Opción A — Jugar desde internet
 
 1. Abre https://sagitari01.github.io/sparkflow/ desde un navegador moderno (Chrome, Edge, Firefox o Safari).
